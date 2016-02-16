@@ -264,7 +264,7 @@ if [ $DOWNLOAD ] && [ $DOWNLOAD == 1 ]; then
       result=$(detect_linux)
       if [ $? -ne 0 ]; then
         printf "$result\n" >&2
-        exit 1
+        #exit 1
       fi
 
       IFS=" " read PKG_DIST PKG_TYPE <<< "${result}"
